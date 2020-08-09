@@ -10,6 +10,7 @@ class CheckExternalLinksDiffBuilder(
     sphinx.builders.linkcheck.CheckExternalLinksBuilder
 ):
     name = "linkcheckdiff"
+    epilog = "Look for any errors in the above output or in %(outdir)s /output.txt"
 
     def init(self) -> None:
         super().init()
