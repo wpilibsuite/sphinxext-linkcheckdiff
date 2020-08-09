@@ -73,7 +73,16 @@ def app_init_repo(make_app, app_params):
 
     def git(cmd: str):
         with suppress(subprocess.CalledProcessError):
-            subprocess.check_output(f"git -C {src_path} {cmd}", shell=True)
+            subprocess.check_output(
+                [
+                    "git",
+                    "-c user.name='sphinxext-linkcheckdiff test runner'",
+                    "-c user.email='NONE'",
+                    f"-C {src_path}",
+                    cmd,
+                ],
+                shell=True,
+            )
 
     git("init")
 
