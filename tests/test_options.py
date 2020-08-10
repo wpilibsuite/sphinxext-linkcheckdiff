@@ -8,7 +8,7 @@ def test_file_added(app_init_repo):
     assert (app_init_repo.outdir / "output.txt").exists()
     content = (app_init_repo.outdir / "output.txt").read_text()
 
-    assert "http://www.google.com/thisisabadurl" in content
+    assert "https://www.google.com/thisisabadurl" in content
     assert content.count(".rst") == 1
 
 
@@ -47,7 +47,7 @@ def test_files_added_some_link(app_init_repo):
     assert (app_init_repo.outdir / "output.txt").exists()
     content = (app_init_repo.outdir / "output.txt").read_text()
 
-    assert "Not Found for url: http://www.google.com/thisisabadurl" in content
+    assert "Not Found for url: https://www.google.com/thisisabadurl" in content
     assert content.count(".rst") == 1
 
 

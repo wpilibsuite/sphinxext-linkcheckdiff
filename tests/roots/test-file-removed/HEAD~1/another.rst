@@ -1,1 +1,1 @@
-`Bad URL <http://www.google.com/thisisabadurl>`_.
+`Bad URL <https://www.google.com/thisisabadurl>`_.
