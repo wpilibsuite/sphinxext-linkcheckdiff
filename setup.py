@@ -18,8 +18,8 @@ setuptools.setup(
     description="Sphinx Extension to run diff-only linkchecks",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/thetriplev/sphinxext-linkcheckdiff",
-    install_requires=["sphinx>=2.0"],
+    url="https://github.com/wpilibsuite/sphinxext-linkcheckdiff",
+    install_requires=["sphinx>=3.0"],
     packages=["sphinxext"],
     classifiers=[
         "Environment :: Plugins",

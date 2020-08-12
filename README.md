@@ -5,7 +5,7 @@ Sphinx Extension to run diff-only linkchecks
 
 ## Installation
 
-`python -m pip install https://github.com/TheTripleV/sphinxext-linkcheckdiff`
+`python -m pip install git+https://github.com/wpilibsuite/sphinxext-linkcheckdiff`
 
 ## Usage
 Add `sphinxext.linkcheckdiff` to your extensions list in your `conf.py`
