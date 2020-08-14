@@ -1,11 +1,16 @@
 # sphinxext-linkcheckdiff
+![ci](https://github.com/wpilibsuite/sphinxext-linkcheckdiff/workflows/ci/badge.svg)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 Sphinx Extension to run diff-only linkchecks
 
 ## Installation
 
-`python -m pip install git+https://github.com/wpilibsuite/sphinxext-linkcheckdiff`
+`python -m pip install sphinxext-linkcheckdiff`
+
+## Requirements
+
+- Sphinx >= 3
 
 ## Usage
 Add `sphinxext.linkcheckdiff` to your extensions list in your `conf.py`
@@ -27,5 +32,5 @@ Note: linkcheckdiff is an extension of the linkcheck builder that ships with Sph
 ## Example Config
 
 ```python
-linkcheckdiff_branch = "master"
+linkcheckdiff_branch = "origin/master"
 ```
