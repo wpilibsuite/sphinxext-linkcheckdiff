@@ -20,6 +20,9 @@ extensions = [
    sphinxext.linkcheckdiff,
 ]
 ```
+
+This will add a builder that can be ran using the `make linkcheckdiff` command in your terminal of choice.
+
 ## Options
 These values are placed in the conf.py of your sphinx project.
 
