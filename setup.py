@@ -5,7 +5,7 @@ try:
     ret = subprocess.check_output("git describe --tags --abbrev=0", shell=True,)
     version = ret.decode("utf-8").strip()
 except:
-    version = "master"
+    version = "main"
 
 with open("README.md", "r", encoding="utf-8") as readme:
     long_description = readme.read()
