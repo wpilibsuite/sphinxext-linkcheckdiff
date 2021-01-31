@@ -35,5 +35,5 @@ Note: linkcheckdiff is an extension of the linkcheck builder that ships with Sph
 ## Example Config
 
 ```python
-linkcheckdiff_branch = "origin/master"
+linkcheckdiff_branch = "origin/main"
 ```
