@@ -8,7 +8,7 @@ from pathlib import Path
 
 class CheckExternalLinksDiffBuilder(
     sphinx.builders.linkcheck.CheckExternalLinksBuilder,
-    sphinx.builders.dummy.DummyBuilder
+    sphinx.builders.dummy.DummyBuilder,
 ):
     name = "linkcheckdiff"
     epilog = "Look for any errors in the above output or in %(outdir)s /output.txt"
